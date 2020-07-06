@@ -3,7 +3,6 @@
 ![build status](https://github.com/nihalgonsalves/next-typescript-eslint-template/workflows/build/badge.svg)
 ![last commit](https://img.shields.io/github/last-commit/nihalgonsalves/next-typescript-eslint-template)
 ![license UNLICENSE](https://img.shields.io/github/license/nihalgonsalves/next-typescript-eslint-template?color=brightgreen)
-![Dependabot Status](https://api.dependabot.com/badges/status?host=github&repo=nihalgonsalves/next-typescript-eslint-template)
 
 Next + TypeScript + next-i18next template repository with typescript-eslint (airbnb config).
 
