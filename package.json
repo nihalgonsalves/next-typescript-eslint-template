@@ -1,0 +1,25 @@
+{
+  "name": "node-typescript-eslint-template",
+  "description": "",
+  "version": "0.0.1",
+  "main": "build/index.js",
+  "author": "",
+  "license": "",
+  "scripts": {
+    "dev": "ts-node-dev src/index.ts",
+    "start": "NODE_ENV=production node build/index.js",
+    "build": "tsc",
+    "test": "exit 0",
+    "lint": "eslint --ext .js,.jsx,.ts,.tsx src/**/*"
+  },
+  "dependencies": {},
+  "devDependencies": {
+    "@typescript-eslint/eslint-plugin": "^3.5.0",
+    "@typescript-eslint/parser": "^3.5.0",
+    "eslint": "^7.4.0",
+    "eslint-config-airbnb-typescript": "^8.0.2",
+    "eslint-plugin-import": "^2.22.0",
+    "ts-node-dev": "^1.0.0-pre.50",
+    "typescript": "^3.9.6"
+  }
+}
