@@ -1,4 +1,3 @@
-// eslint-disable-next-line import/no-extraneous-dependencies
 import express from 'express';
 import next from 'next';
 import nextI18NextMiddleware from 'next-i18next/middleware';
