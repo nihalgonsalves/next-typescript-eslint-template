@@ -9,7 +9,7 @@ Next + TypeScript + next-i18next template repository with typescript-eslint (air
 Dependabot keeps the dependencies up to date.
 
 - **Build tool**: yarn (can be replaced with npm: `rm yarn.lock && npm install`)
-- **Target Browser ES2020 version**: es2019 (see: http://kangax.github.io/compat-table/es2016plus/)
+- **Target Browser ES version support**: es2019 (see: http://kangax.github.io/compat-table/es2016plus/)
 - **Structure**: `src/` for TypeScript source files and `build/` and `out/` for output
 - Also includes a default `.editorconfig` with 2-space indents
 
