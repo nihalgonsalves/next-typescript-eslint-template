@@ -6,9 +6,9 @@
   "author": "",
   "license": "",
   "scripts": {
-    "dev": "ts-node --project tsconfig.server.json src/server.ts",
-    "start": "NODE_ENV=production node build/server.js",
-    "build": "tsc && tsc --project tsconfig.server.json && next build",
+    "dev": "next",
+    "start": "next start",
+    "build": "tsc && next build",
     "export": "yarn build && next export",
     "serve": "serve ./out/ --listen 3000",
     "test": "exit 0",
@@ -33,7 +33,6 @@
     "eslint-plugin-react": "^7.20.4",
     "eslint-plugin-react-hooks": "^4.0.8",
     "serve": "^11.3.2",
-    "ts-node": "^8.10.2",
     "typescript": "^3.9.7"
   }
 }
