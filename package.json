@@ -2,7 +2,6 @@
   "name": "node-typescript-eslint-template",
   "description": "",
   "version": "0.0.1",
-  "main": "build/server.js",
   "author": "",
   "license": "",
   "scripts": {
