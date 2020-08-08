@@ -1,4 +1,4 @@
-import path from 'path'
+import path from 'path';
 import NextI18Next from 'next-i18next';
 
 import { LanguageId } from './config';
@@ -10,7 +10,7 @@ export const languages: LanguageId[] = [defaultLanguage, ...otherLanguages];
 const NextI18NextInstance = new NextI18Next({
   defaultLanguage,
   otherLanguages,
-  localePath: path.resolve('./public/static/locales')
+  localePath: path.resolve('./public/static/locales'),
 });
 
 const {
