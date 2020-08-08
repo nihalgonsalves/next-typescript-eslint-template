@@ -11,7 +11,7 @@
     "export": "yarn build && next export",
     "serve": "serve ./out/ --listen 3000",
     "test": "exit 0",
-    "lint": "eslint --ext .js,.jsx,.ts,.tsx src/**/*"
+    "lint": "eslint --ext .js,.jsx,.ts,.tsx ./src/"
   },
   "dependencies": {
     "express": "^4.17.1",
