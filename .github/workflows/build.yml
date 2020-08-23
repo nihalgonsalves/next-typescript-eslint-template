@@ -23,6 +23,9 @@ jobs:
          push: false
      - name: Run image and make request
        run: |
-        docker run -p 127.0.0.1:3000:3000 nihalgonsalves/next-typescript-eslint-template
+        docker run --name test -d -p 127.0.0.1:3000:3000 nihalgonsalves/next-typescript-eslint-template
+        # easier than implementing retry logic for this simple check
+        sleep 3
         curl http://localhost:3000/
+        docker rm test
 
