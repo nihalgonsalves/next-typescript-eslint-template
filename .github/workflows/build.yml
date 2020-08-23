@@ -27,5 +27,5 @@ jobs:
         # easier than implementing retry logic for this simple check
         sleep 3
         curl http://localhost:3000/
-        docker rm test
+        docker stop test
 
