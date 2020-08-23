@@ -1,7 +1,7 @@
 name: build
 on: [push]
 jobs:
-  build:
+  lint:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v1
@@ -10,4 +10,19 @@ jobs:
         with:
           node-version: '14.x'
       - run: yarn install --frozen-lockfile
-      - run: yarn lint && yarn build
+      - run: yarn lint
+  build:
+   runs-on: ubuntu-latest
+   steps:
+     - uses: actions/checkout@v1
+     - name: Build image
+       uses: docker/build-push-action@v1
+       with:
+         repository: nihalgonsalves/next-typescript-eslint-template
+         tags: latest
+         push: false
+     - name: Run image and make request
+       run: |
+        docker run -p 127.0.0.1:3000:3000 nihalgonsalves/next-typescript-eslint-template
+        curl http://localhost:3000/
+
