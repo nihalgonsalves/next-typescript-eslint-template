@@ -5,10 +5,12 @@ WORKDIR /usr/src/app
 ADD package.json .
 ADD yarn.lock .
 
+# All the steps until here can be re-used in the second stage,
+# so the devDependencies are installed separately
+RUN yarn install --frozen-lockfile --production
 RUN yarn install --frozen-lockfile
 
 ADD tsconfig.json .
-ADD tsconfig.server.json .
 ADD src/ ./src/
 ADD public/ ./public/
 
@@ -25,7 +27,6 @@ RUN yarn install --frozen-lockfile --production
 
 ADD public ./public/
 COPY --from=builder /usr/src/app/.next/ ./.next/
-COPY --from=builder /usr/src/app/build/ ./build/
 
 ENV NODE_ENV=production
 
