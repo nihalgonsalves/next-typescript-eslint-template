@@ -4581,10 +4581,10 @@ neo-async@2.6.1, neo-async@^2.5.0, neo-async@^2.6.1:
   resolved "https://registry.yarnpkg.com/neo-async/-/neo-async-2.6.1.tgz#ac27ada66167fa8849a6addd837f6b189ad2081c"
   integrity sha512-iyam8fBuCUpWeKPGpaNMetEocMt364qkCsfL9JuhjXX6dRnguRVOfk2GZaDpPjcOKiiXCPINZC1GczQ7iTq3Zw==
 
-next-i18next@^6.0.2:
-  version "6.0.2"
-  resolved "https://registry.yarnpkg.com/next-i18next/-/next-i18next-6.0.2.tgz#55771ca7685b61f8ec1d0ac2bb1abc700a0b5d59"
-  integrity sha512-8Md9Jjlexj9z7hRuuDZSP9uBI/OT4G1//d5EeqK3U32JTm1w76qH5yZyrKCvgiIYBiuU+0dl7PQiga5kaYMFBg==
+next-i18next@^6.0.3:
+  version "6.0.3"
+  resolved "https://registry.yarnpkg.com/next-i18next/-/next-i18next-6.0.3.tgz#88ead7e3df3a53467b887bf296964dd17081e23c"
+  integrity sha512-zyh1bDFmNexF45PsU+pdxlQ87UYadkRCjR7Co7YXsmnpsikWtarOhu6qJrVe0IAXC1Ns+IoyS9dCPlE3CvuQxA==
   dependencies:
     "@types/express" "^4.16.1"
     core-js "^3"
@@ -4596,7 +4596,7 @@ next-i18next@^6.0.2:
     i18next-http-middleware "^3.0.2"
     path-match "^1.2.4"
     prop-types "^15.6.2"
-    react-i18next "^11.7.0"
+    react-i18next "^11.7.3"
     url "^0.11.0"
 
 next-tick@~1.0.0:
@@ -5366,10 +5366,10 @@ react-dom@^16.13.1:
     prop-types "^15.6.2"
     scheduler "^0.19.1"
 
-react-i18next@^11.7.0:
-  version "11.7.0"
-  resolved "https://registry.yarnpkg.com/react-i18next/-/react-i18next-11.7.0.tgz#f27c4c237a274e007a48ac1210db83e33719908b"
-  integrity sha512-8tvVkpuxQlubcszZON+jmoCgiA9gCZ74OAYli9KChPhETtq8pJsANBTe9KRLRLmX3ubumgvidURWr0VvKz1tww==
+react-i18next@^11.7.3:
+  version "11.7.3"
+  resolved "https://registry.yarnpkg.com/react-i18next/-/react-i18next-11.7.3.tgz#256461c46baf5b3208c3c6860ca4e569fc7ed053"
+  integrity sha512-7sYZqVZgdaS9Z0ZH6nuJFErCD0zz5wK3jR4/xCrWjZcxHHF3GRu7BXdicbSPprZV4ZYz7LJzxxMHO7dg5Qb70A==
   dependencies:
     "@babel/runtime" "^7.3.1"
     html-parse-stringify2 "2.0.1"
