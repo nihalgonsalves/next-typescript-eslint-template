@@ -14,7 +14,7 @@
     "lint": "eslint --ext .js,.jsx,.ts,.tsx ./src/"
   },
   "dependencies": {
-    "next": "^10.0.5",
+    "next": "^10.0.6",
     "next-i18next": "^7.0.1",
     "react": "^17.0.1",
     "react-dom": "^17.0.1"
