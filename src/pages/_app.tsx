@@ -1,6 +1,5 @@
 import App from 'next/app';
-
-import { appWithTranslation } from '../NextI18Next';
+import { appWithTranslation } from 'next-i18next';
 
 class MyApp extends App {}
 
