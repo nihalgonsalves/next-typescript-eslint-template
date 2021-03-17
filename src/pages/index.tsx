@@ -1,30 +1,38 @@
-import { NextPage } from 'next';
 import React from 'react';
-import { useTranslation, i18n, languages } from '../NextI18Next';
+import type { NextPage, GetStaticProps } from 'next';
+import Link from 'next/link';
+import { useTranslation } from 'next-i18next';
+import { serverSideTranslations } from 'next-i18next/serverSideTranslations';
+import { useRouter } from 'next/dist/client/router';
 
 const IndexPage: NextPage = () => {
+  const router = useRouter();
   const { t } = useTranslation();
 
-  const changeLanguage = (language: string) => () => {
-    void i18n.changeLanguage(language);
-  };
+  const otherLocale = router.locale === 'en' ? 'de' : 'en';
 
   return (
     <div>
       <p>
         <strong>{t('hello')}</strong>
       </p>
-      {languages.map((language) => (
-        <button key={language} type="button" onClick={changeLanguage(language)}>
-          {language}
-        </button>
-      ))}
+      <Link href="/" locale={otherLocale}>
+        <button type="button">{otherLocale}</button>
+      </Link>
     </div>
   );
 };
 
-IndexPage.getInitialProps = () => ({
-  namespacesRequired: ['common'],
-});
+export const getStaticProps: GetStaticProps = async ({ locale }) => {
+  if (!locale) {
+    return { props: {} };
+  }
+
+  return {
+    props: {
+      ...(await serverSideTranslations(locale, ['common'])),
+    },
+  };
+};
 
 export default IndexPage;
