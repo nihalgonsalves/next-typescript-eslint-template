@@ -1,5 +1,8 @@
 {
-  "extends": "./node_modules/@nihalgonsalves/esconfig/.eslintrc",
+  "extends": [
+    "./node_modules/@nihalgonsalves/esconfig/.eslintrc",
+    "./node_modules/@nihalgonsalves/esconfig/.eslintrc.react"
+  ],
   "overrides": [
     {
       // Next pages must be default-exported
