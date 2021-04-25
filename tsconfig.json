@@ -1,30 +1,15 @@
 {
+  "extends": "@nihalgonsalves/esconfig",
   "compilerOptions": {
-    "target": "es2019",
-    "lib": [
-      "dom",
-      "dom.iterable",
-      "es2020"
-    ],
+    "lib": ["dom", "dom.iterable", "es2020"],
     "allowJs": true,
-    "skipLibCheck": true,
-    "strict": true,
-    "forceConsistentCasingInFileNames": true,
     "noEmit": true,
-    "esModuleInterop": true,
-    "module": "esnext",
-    "moduleResolution": "node",
     "resolveJsonModule": true,
     "isolatedModules": true,
-    "jsx": "preserve"
+    "jsx": "preserve",
+    "skipLibCheck": true,
+    "incremental": false
   },
-  "exclude": [
-    "node_modules"
-  ],
-  "include": [
-    "next-env.d.ts",
-    "**/*.ts",
-    "**/*.tsx",
-    "**/*.js"
-  ]
+  "exclude": ["node_modules"],
+  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", "**/*.js"]
 }

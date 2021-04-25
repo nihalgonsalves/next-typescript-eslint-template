@@ -1,9 +1,9 @@
-import React from 'react';
 import type { NextPage, GetStaticProps } from 'next';
-import Link from 'next/link';
 import { useTranslation } from 'next-i18next';
 import { serverSideTranslations } from 'next-i18next/serverSideTranslations';
 import { useRouter } from 'next/dist/client/router';
+import Link from 'next/link';
+import React from 'react';
 
 const IndexPage: NextPage = () => {
   const router = useRouter();
